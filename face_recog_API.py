@@ -10,8 +10,8 @@ from typing import List, Dict
 import tempfile
 import uvicorn
 
-supabase_url = 'https://lahrdlkzclbcnordtckv.supabase.co'
-supabase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhaHJkbGt6Y2xiY25vcmR0Y2t2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA2NDE4MDgsImV4cCI6MjA1NjIxNzgwOH0.Vj3SsuLeCaJvfmrNEw4BcLan63LaKWmtjKGWvU33eAc'
+supabase_url = '' #enter your supabase credentials
+supabase_key = '' #enter your supabase credentials
 supabase: Client = create_client(supabase_url, supabase_key)
 
 def recognize_face(image_path, tolerance=0.6):
